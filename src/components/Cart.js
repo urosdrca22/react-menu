@@ -34,7 +34,7 @@ const Cart = (props) => {
             </div>
             <div className='actions'>
                 <button className='button--alt' onClick={props.onClose}>Close</button>
-                {hasItems && <button className='button'>Order</button>}
+                {hasItems && <button className='button' onClick={() => alert('Order Successfull!')}>Order</button>}
             </div>
         </CartModal>
     );
